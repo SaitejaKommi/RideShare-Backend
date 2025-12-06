@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: rideshare
+  data:
+    mongodb:
+      uri: mongodb+srv://sai24bcs10337_db_user:KPlF2A9wa5cmajWO@cluster0.nvwwc15.mongodb.net/rideshare?appName=Cluster0
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+server:
+  port: 8081
+
+jwt:
+  secret: mySecretKeyForRideShareApplicationWithAtLeast256BitsOfSecurityForHS256
+  expiration: 86400000
